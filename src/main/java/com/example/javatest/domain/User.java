@@ -2,30 +2,30 @@ package com.example.javatest.domain;
 
 public class User {
 
-    private String firstName;
-    private int age;
+    private String name;
+    private int id;
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public int getId() {
+        return id;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", age=" + age +
+                "name: '" + name + '\'' +
+                ", id: " + id +
                 '}';
     }
 
