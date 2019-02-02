@@ -16,7 +16,7 @@ public class TestController {
      this.mockService = mockService;
     }
 
-    public static Map<String, String> result = new HashMap<>();
+    private static Map<String, String> result = new HashMap<>();
 
 
     @GetMapping("test")
@@ -37,7 +37,7 @@ public class TestController {
         result.put("name",user.getName());
         result.put("id", String.valueOf(user.getId()));
         System.out.println(user);
-        System.out.println(result.get("name"));
+        // System.out.println(result.get("name"));
 
         // mockService.foo();
     }
